@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    
+    <!--bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+        <!-- external css  -->
+
+<link rel="stylesheet" href="style.css">
+
+    <title>Book Archive</title>
+</head>
+<body>
+
+            <!-- Search section  -->
+
+    <div class="container search-bar my-3">
+        <div class="row height d-flex justify-content-center align-items-center">
+            <div class="col-md-8">
+                <div class="search"> <i class="fa fa-search"></i> <input type="text" class="form-control" placeholder="Want a book? Search it" id="input"> <button class="btn btn-primary" id="search">Search</button> </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- Search Found SEction  -->
+
+    <h1 id="search-found" class="container mx-auto my-3"></h1>
+
+        <!-- Books display section  -->
+
+    <div class="d-flex justify-content-center align-items-center container mx-auto"    id="display">
+        <!-- books will be added here dynamically -->
+        <h1 class="text-center my-5">Your result will be display here</h1>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
